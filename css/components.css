@@ -157,6 +157,7 @@ a{
 }
 
 p {
+  height: 177px;
   padding: 15px;
   font-weight: 300;
   max-width: 400px;
@@ -257,4 +258,10 @@ p {
 
 .footer-links a:hover {
   color: #8c8c8c;
+}
+
+h4{
+  padding: 15px;
+  font-weight: 300;
+  max-width: 400px;
 }

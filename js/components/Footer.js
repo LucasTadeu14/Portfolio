@@ -2,7 +2,7 @@ export function Footer() {
   const foot = document.createElement("footer");
   foot.classList.add("footer");
 
-  const text = document.createElement("p");
+  const text = document.createElement("h4");
   text.textContent = "© 2026 Project By: Lucas Tadeu";
   foot.appendChild(text);
 
