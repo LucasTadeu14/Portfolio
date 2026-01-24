@@ -63,7 +63,7 @@ Este é um projeto pessoal e serve mais como demonstração de habilidades do qu
 
 ## 📬 Contato
 
-- LinkedIn: [Lucas Tadeu](https://www.linkedin.com/in/lucastadeu/)  
+- LinkedIn: [Lucas Tadeu](https://www.linkedin.com/in/lucas-tadeu-4828a3330/)  
 - GitHub: [LucasTadeu14](https://github.com/LucasTadeu14)  
 
 ---
@@ -71,3 +71,4 @@ Este é um projeto pessoal e serve mais como demonstração de habilidades do qu
 ### ⚠️ Observação
 
 Este portfólio é **intencionalmente sem frameworks**. É uma crítica construtiva à dependência excessiva de ferramentas prontas: **entender o básico profundamente é sempre mais valioso**.
+
