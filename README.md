@@ -1,6 +1,7 @@
 # 💻 Portfolio – Lucas Tadeu
 
 > Um portfólio totalmente feito **sem frameworks**, mostrando que dominar o básico é mais poderoso do que depender de ferramentas prontas.
+> Visite o portfólio: https://portfolio-ten-coral-eidf90dyd0.vercel.app/
 
 ---
 
@@ -71,4 +72,5 @@ Este é um projeto pessoal e serve mais como demonstração de habilidades do qu
 ### ⚠️ Observação
 
 Este portfólio é **intencionalmente sem frameworks**. É uma crítica construtiva à dependência excessiva de ferramentas prontas: **entender o básico profundamente é sempre mais valioso**.
+
 
