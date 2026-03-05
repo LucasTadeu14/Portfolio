@@ -26,4 +26,16 @@ export const ProjectData = [
       "https://skillicons.dev/icons?i=git"
     ]
   },
+  {
+    title: "Conde Clínica",
+    description: "Site institucional desenvolvido como freelance para a Conde Estética Avançada, clínica de medicina estética. Foi meu primeiro projeto comercial real. O sistema apresenta os serviços da clínica, resultados e integração com WhatsApp para agendamentos. Foco em presença digital, captação de pacientes e boa experiência do usuário em desktop e mobile.",
+    video: "./assets/videos/condeClinicaPreview.mp4",
+    link: "https://github.com/LucasTadeu14/Conde_clinica",
+    skills: [
+      "https://skillicons.dev/icons?i=angular",
+      "https://skillicons.dev/icons?i=typescript",
+      "https://skillicons.dev/icons?i=css",
+      "https://skillicons.dev/icons?i=git"
+    ]
+  }
 ];
