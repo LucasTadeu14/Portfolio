@@ -33,6 +33,7 @@ export const ProjectData = [
     link: "https://github.com/LucasTadeu14/Conde_clinica",
     skills: [
       "https://skillicons.dev/icons?i=angular",
+      "https://skillicons.dev/icons?i=html",
       "https://skillicons.dev/icons?i=typescript",
       "https://skillicons.dev/icons?i=css",
       "https://skillicons.dev/icons?i=git"
