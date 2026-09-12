@@ -1,29 +1,56 @@
 export function Footer() {
-  const foot = document.createElement("footer");
-  foot.classList.add("footer");
+  const footer = document.createElement("footer");
+  footer.classList.add("footer");
 
-  const text = document.createElement("h4");
-  text.textContent = "© 2026 Project By: Lucas Tadeu";
-  foot.appendChild(text);
+  const inner = document.createElement("div");
+  inner.classList.add("footer_inner");
 
-  const links = document.createElement("div");
-  links.classList.add("footer-links");
+  const brand = document.createElement("div");
+  brand.classList.add("footer_brand");
+  brand.innerHTML = `
+    <span class="footer_name">Lucas Conde</span>
+    <span class="footer_role">Desenvolvedor FullStack</span>
+  `;
 
-  const social = [
-    { name: "Instagram", url: "https://www.instagram.com/lucasst14/" },
-    { name: "GitHub", url: "https://github.com/LucasTadeu14/" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/lucas-tadeu-4828a3330/" }
-  ];
+  const nav = document.createElement("nav");
+  nav.classList.add("footer_nav");
+  nav.setAttribute("aria-label", "Links do rodapé");
 
-  social.forEach(item => {
-    const a = document.createElement("a");
-    a.href = item.url;
-    a.target = "_blank";
-    a.textContent = item.name;
-    links.appendChild(a);
+  [
+    { label: "Home", href: "/" },
+    { label: "Sobre", href: "/about" },
+    { label: "Projetos", href: "/projects" },
+    { label: "Contato", href: "/contact" }
+  ].forEach(({ label, href }) => {
+    const link = document.createElement("a");
+    link.href = href;
+    link.textContent = label;
+    nav.appendChild(link);
   });
 
-  foot.appendChild(links);
+  const social = document.createElement("div");
+  social.classList.add("footer_social");
 
-  return foot;
+  [
+    { name: "GitHub", url: "https://github.com/LucasTadeu14/" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/lucas-tadeu-4828a3330/" },
+    { name: "Instagram", url: "https://www.instagram.com/lucasst14/" }
+  ].forEach(({ name, url }) => {
+    const link = document.createElement("a");
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = name;
+    social.appendChild(link);
+  });
+
+  const copyright = document.createElement("p");
+  copyright.classList.add("footer_copy");
+  // Ano dinâmico: o "© 2026" fixo envelhecia sozinho.
+  copyright.textContent = `© ${new Date().getFullYear()} Lucas Tadeu · Feito sem frameworks`;
+
+  inner.append(brand, nav, social);
+  footer.append(inner, copyright);
+
+  return footer;
 }

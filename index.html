@@ -3,24 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio</title>
 
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/images.css">
+  <title>Lucas Conde — Desenvolvedor FullStack</title>
+  <meta name="description" content="Portfólio de Lucas Conde, desenvolvedor FullStack focado em React, TypeScript e Node.js. Graduando em Ciência da Computação. Veja projetos, stack e formas de contato.">
+  <meta name="author" content="Lucas Conde">
+  <link rel="canonical" href="https://portfolio-ten-coral-eidf90dyd0.vercel.app/">
+  <meta name="theme-color" content="#1C1B2D">
 
+  <!-- Open Graph: preview ao compartilhar no LinkedIn, WhatsApp, Discord -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lucas Conde">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Lucas Conde — Desenvolvedor FullStack">
+  <meta property="og:description" content="Desenvolvedor FullStack focado em React, TypeScript e Node.js. Veja meus projetos e minha stack.">
+  <meta property="og:url" content="https://portfolio-ten-coral-eidf90dyd0.vercel.app/">
+  <meta property="og:image" content="https://portfolio-ten-coral-eidf90dyd0.vercel.app/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lucas Conde — Desenvolvedor FullStack">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lucas Conde — Desenvolvedor FullStack">
+  <meta name="twitter:description" content="Desenvolvedor FullStack focado em React, TypeScript e Node.js. Veja meus projetos e minha stack.">
+  <meta name="twitter:image" content="https://portfolio-ten-coral-eidf90dyd0.vercel.app/assets/og-image.png">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+
+  <!-- Dados estruturados: como o Google entende quem você é -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lucas Conde",
+    "alternateName": "Lucas Tadeu",
+    "jobTitle": "Desenvolvedor FullStack",
+    "url": "https://portfolio-ten-coral-eidf90dyd0.vercel.app/",
+    "sameAs": [
+      "https://github.com/LucasTadeu14/",
+      "https://www.linkedin.com/in/lucas-tadeu-4828a3330/"
+    ],
+    "knowsAbout": ["React", "TypeScript", "JavaScript", "Node.js", "Next.js", "NestJS"]
+  }
+  </script>
 </head>
 <body>
 
-  <div id="app"></div>
-  
-  <script type="module" src="js/app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    emailjs.init("He3ZqQJd2TO3_r6Eq");
-  </script>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
+  <div id="app"></div>
+
+  <!-- Fallback para crawlers e para JS desativado. Escondido via CSS
+       assim que o app monta, mas presente no HTML entregue. -->
+  <noscript>
+    <div class="noscript">
+      <h1>Lucas Conde — Desenvolvedor FullStack</h1>
+      <p>
+        Graduando em Ciência da Computação, com foco em React, TypeScript e
+        JavaScript moderno. Construo SPAs performáticas, componentes
+        reutilizáveis e integrações com APIs REST.
+      </p>
+      <p>
+        <a href="https://github.com/LucasTadeu14/">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/lucas-tadeu-4828a3330/">LinkedIn</a>
+      </p>
+    </div>
+  </noscript>
+
+  <script type="module" src="/js/app.js"></script>
 
 </body>
 </html>

@@ -1,74 +1,27 @@
-export const SkillsData = [
+/* ══════════════════════════════════════════════
+   SKILLS
+   Agrupadas por familiaridade real, em vez de nota
+   de 0 a 10. "Java 2/10" no próprio portfólio não
+   informa ninguém e só joga contra.
+   ══════════════════════════════════════════════ */
+
+export const SkillGroups = [
   {
-    title: "JavaScript",
-    description: "JavaScript icon skill.",
-    link: "https://skillicons.dev/icons?i=js",
-    level: 7
+    id: "core",
+    title: "Trabalho no dia a dia",
+    description: "Stack principal, usada nos projetos que estão neste portfólio.",
+    skills: ["react", "ts", "js", "html", "css", "tailwind", "git"]
   },
   {
-    title: "HTML",
-    description: "HTML icon skill.",
-    link: "https://skillicons.dev/icons?i=html",
-    level: 9
+    id: "working",
+    title: "Uso com confiança",
+    description: "Já entreguei funcionalidades com estas ferramentas.",
+    skills: ["nodejs", "next", "firebase", "angular"]
   },
   {
-    title: "CSS",
-    description: "CSS icon skill.",
-    link: "https://skillicons.dev/icons?i=css",
-    level: 7
-  },
-  {
-    title: "NEXT",
-    description: "NEXT icon skill.",
-    link: "https://skillicons.dev/icons?i=next",
-    level: 6,
-  },
-  {
-    title: "GIT",
-    description: "GIT icon skill.",
-    link: "https://skillicons.dev/icons?i=git",
-    level: 7
-  },
-  {
-    title: "NESTJS",
-    description: "NESTJS icon skill.",
-    link: "https://skillicons.dev/icons?i=nestjs",
-    level: 5
-  },
-  {
-    title: "NODEJS",
-    description: "NODEJS icon skill.",
-    link: "https://skillicons.dev/icons?i=nodejs",
-    level: 4
-  },
-  {
-    title: "REACT",
-    description: "REACT icon skill.",
-    link: "https://skillicons.dev/icons?i=react",
-    level: 7
-  },
-  {
-    title: "TAILWINDCSS",
-    description: "TAILWINDCSS icon skill.",
-    link: "https://skillicons.dev/icons?i=tailwind",
-    level: 8
-  },
-  {
-    title: "TYPESCRIPT",
-    description: "TYPESCRIPT icon skill.",
-    link: "https://skillicons.dev/icons?i=ts",
-    level: 7
-  },
-  {
-    title: "FIREBASE",
-    description: "FIREBASE icon skill.",
-    link: "https://skillicons.dev/icons?i=firebase",
-    level: 5
-  },
-  {
-    title: "JAVA",
-    description: "JAVA icon skill.",
-    link: "https://skillicons.dev/icons?i=java",
-    level: 2
-  },
-]
+    id: "learning",
+    title: "Estudando agora",
+    description: "No radar, com projetos de estudo em andamento.",
+    skills: ["nestjs", "java"]
+  }
+];

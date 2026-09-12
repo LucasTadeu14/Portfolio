@@ -1,4 +1,93 @@
+/* ══════════════════════════════════════════════
+   DESIGN TOKENS
+   Fonte da verdade para cores, espaçamento,
+   tipografia e movimento. Nada de hex solto
+   nos outros arquivos.
+   ══════════════════════════════════════════════ */
+
 :root {
-  --primary: #1C1B2D;
-  --text: #e5e7eb;
+  /* ── Superfícies ───────────────────────────── */
+  --bg:              #1C1B2D;
+  --surface:         #28273C;
+  --surface-hover:   #322F48;
+  --surface-sunken:  #17162a;
+  --border:          #3a3850;
+  --border-strong:   #4d4a66;
+
+  /* ── Texto ─────────────────────────────────── */
+  --text:            #e5e7eb;
+  --text-muted:      #9ca3af;
+  --text-dim:        #6b7280;
+  --text-inverse:    #14131f;
+
+  /* ── Marca ─────────────────────────────────── */
+  --accent:          #7c3aed;
+  --accent-light:    #a78bfa;
+  --accent-soft:     #c4b5fd;
+  --accent-blue:     #60a5fa;
+  --success:         #4ade80;
+
+  /* Versões translúcidas (sem recalcular rgba à mão) */
+  --accent-a12:      rgba(124, 58, 237, 0.12);
+  --accent-a30:      rgba(124, 58, 237, 0.30);
+  --accent-a08:      rgba(167, 139, 250, 0.08);
+
+  --gradient:        linear-gradient(135deg, var(--accent-light) 0%, var(--accent-blue) 100%);
+
+  /* ── Espaçamento (escala 4px) ──────────────── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* ── Raio ──────────────────────────────────── */
+  --radius-sm:   8px;
+  --radius:      12px;
+  --radius-lg:   20px;
+  --radius-full: 999px;
+
+  /* ── Tipografia ────────────────────────────── */
+  --font: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --text-xs:  0.8125rem;
+  --text-sm:  0.9375rem;
+  --text-base: 1rem;
+  --text-lg:  1.125rem;
+  --text-xl:  clamp(1.25rem, 2.5vw, 1.75rem);
+  --text-2xl: clamp(1.75rem, 4vw, 2.5rem);
+  --text-3xl: clamp(2.5rem, 7vw, 5.25rem);
+
+  /* ── Elevação ──────────────────────────────── */
+  --shadow:    0 4px 16px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.35);
+  --glow:      0 0 24px var(--accent-a30);
+
+  /* ── Movimento ─────────────────────────────── */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --fast: 0.18s var(--ease);
+  --base: 0.3s var(--ease);
+  --slow: 0.6s var(--ease);
+
+  /* ── Layout ────────────────────────────────── */
+  --max-width: 1200px;
+  --nav-height: 68px;
+}
+
+/* Respeita quem pediu menos movimento no SO.
+   Zera animações em vez de só encurtar. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

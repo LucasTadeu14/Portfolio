@@ -1,22 +1,32 @@
 import { ProjectData } from "./ProjectsData.js";
 import { ProjectCard } from "./ProjectCard.js";
+import { revealOnScroll } from "../../reveal.js";
 
-export function Projects() {
-  const hero = document.createElement("section");
-  hero.classList.add("hero");
+export function Projects({ onCleanup, onMount } = {}) {
+  const section = document.createElement("section");
+  section.classList.add("section", "projects");
 
-  const titleProjects = document.createElement("h1");
-  titleProjects.textContent = "Projetos";
+  const header = document.createElement("header");
+  header.classList.add("section_header");
+  header.innerHTML = `
+    <p class="section_eyebrow">Portfólio</p>
+    <h1 class="section_title">Projetos</h1>
+    <p class="section_lead">
+      Cada projeto abaixo tem uma página com o problema que resolvi,
+      as decisões técnicas e o que aprendi no caminho.
+    </p>
+  `;
 
-  const cardsSection = document.createElement("section");
-  cardsSection.classList.add("cards");
-
-  hero.appendChild(titleProjects);
-  hero.appendChild(cardsSection);
+  const grid = document.createElement("div");
+  grid.classList.add("cards");
 
   ProjectData.forEach(project => {
-    cardsSection.appendChild(ProjectCard(project));
+    grid.appendChild(ProjectCard(project, { onCleanup }));
   });
 
-  return hero;
+  section.append(header, grid);
+
+  revealOnScroll(grid.querySelectorAll(".card"), { onCleanup, onMount });
+
+  return section;
 }
