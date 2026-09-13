@@ -63,34 +63,35 @@ export const ProjectData = [
   {
     slug: "petwalker",
     title: "PetWalker",
-    tagline: "SPA em React simulando um fluxo de compra completo",
-    year: "2025",
+    tagline: "Loja em React com autenticação, rota protegida e carrinho que sobrevive à navegação",
+    year: "2025 · 2026",
     type: "Projeto pessoal",
     featured: false,
     description:
-      "Aplicação em React com foco na simulação de um fluxo real de usuário: navegação entre páginas, gerenciamento de itens e carrinho de compras interativo.",
+      "Loja de produtos para pets feita em React com Vite. Tem cadastro e login, catálogo, carrinho de compras e uma área que só abre para quem está autenticado.",
     problem:
-      "Eu queria sair dos projetos de tela única e exercitar o que realmente aparece numa aplicação de produção: estado que sobrevive à navegação, dados vindos de fora e um fluxo com mais de um passo.",
+      "Meus projetos até então eram telas isoladas, sem estado que sobrevivesse a uma troca de página. Eu queria exercitar o que aparece de fato numa aplicação de produção: sessão de usuário, rota que barra quem não está logado e um carrinho que não se perde ao navegar.",
     solution:
-      "Montei um e-commerce de serviços para pets com catálogo, carrinho persistente e autenticação via Firebase, organizando a aplicação em componentes reutilizáveis e tipando as fronteiras com TypeScript.",
+      "Montei a aplicação com React Router e dois contextos separados, um para autenticação e outro para o carrinho, de modo que o estado vive acima das rotas. A sessão é do Firebase Auth, e um componente de rota privada decide o que renderizar antes de a página montar.",
     highlights: [
-      "Carrinho com estado compartilhado entre rotas",
-      "Autenticação e persistência com Firebase",
-      "Tipagem em TypeScript nas fronteiras de dados",
-      "Estilização com Tailwind e componentes reaproveitáveis"
+      "Carrinho e sessão em contextos separados, preservados entre rotas",
+      "Rota privada barrando acesso antes de a página montar",
+      "Autenticação com Firebase Auth e cadastro de usuário",
+      "TypeScript nas fronteiras de dados e build com Vite",
+      "Interface com Tailwind CSS, sem biblioteca de componentes"
     ],
     learned:
-      "Gerenciar estado entre rotas sem transformar tudo em estado global, e onde a tipagem realmente compensa numa base pequena.",
+      "Onde estado global ajuda e onde atrapalha. Separar autenticação e carrinho em dois contextos evitou que uma tela de produto recarregasse por causa de uma mudança de sessão, coisa que um contexto único provocaria.",
     video: "/assets/videos/PetWalker_preview.mp4",
     poster: "/assets/posters/petwalker.jpg",
     repo: "https://github.com/LucasTadeu14/PetWalker",
-    demo: null,
-    stack: ["react", "ts", "tailwind", "firebase", "nodejs", "html", "git"]
+    demo: "https://petwalker.vercel.app",
+    stack: ["react", "ts", "vite", "tailwind", "firebase", "git"]
   },
   {
     slug: "portfolio",
     title: "Portfólio (sem framework)",
-    tagline: "Este site: SPA, router e animações escritos do zero",
+    tagline: "Este site: router, ciclo de vida e animações escritos do zero",
     year: "2026",
     type: "Projeto pessoal",
     featured: false,
@@ -99,16 +100,18 @@ export const ProjectData = [
     problem:
       "É fácil montar um portfólio com um template pronto e não conseguir explicar uma linha dele. Eu queria o contrário: um site onde cada comportamento fosse algo que eu soubesse defender numa entrevista.",
     solution:
-      "Escrevi um router client-side com a History API, um sistema de componentes baseado em funções que devolvem nós do DOM, e animações com IntersectionObserver, tudo em JavaScript puro e servido sem bundler.",
+      "Escrevi um router sobre a History API, um sistema de componentes em que cada função devolve nós do DOM, e um ciclo de vida que desliga timers e observers ao trocar de rota. Tudo em JavaScript puro, servido sem bundler.",
     highlights: [
-      "Router próprio com History API, rotas dinâmicas e ciclo de limpeza",
-      "Zero dependências em runtime e nenhum build step",
-      "Ícones em sprite SVG local em vez de CDN de terceiro",
-      "Metadados por rota para SEO e preview em redes sociais"
+      "Router próprio com rotas dinâmicas, normalização de barra final e metadados por página",
+      "Ciclo de vida com onMount e onCleanup: nada de timer sobrevivendo à troca de rota",
+      "Ícones num sprite SVG local, em vez de dezenas de requisições a um CDN de terceiro",
+      "Vídeos só baixam no hover, com o primeiro quadro servindo de capa",
+      "Open Graph e dados estruturados para o link render preview ao ser compartilhado",
+      "Zero dependências em runtime e nenhum build step"
     ],
     learned:
-      "O que um framework realmente resolve. Reimplementar roteamento e ciclo de vida na mão deixou muito mais claro o custo de cada abstração que eu usava sem pensar.",
-    video: "/assets/videos/Portfolio_preview.mp4",
+      "O que um framework realmente resolve. Reimplementar roteamento e ciclo de vida na mão tornou concreto o custo de cada abstração que eu usava sem pensar, e o ciclo de limpeza foi o que mais me surpreendeu: sair de uma página no meio de uma animação deixava timers escrevendo em elementos que já não existiam.",
+    video: null,
     poster: "/assets/posters/portfolio.jpg",
     repo: "https://github.com/LucasTadeu14/Portfolio",
     demo: "https://portfolio-ten-coral-eidf90dyd0.vercel.app/",

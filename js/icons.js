@@ -31,7 +31,8 @@ export const ICON_LABELS = {
   mysql: "MySQL",
   docker: "Docker",
   bootstrap: "Bootstrap",
-  githubactions: "GitHub Actions"
+  githubactions: "GitHub Actions",
+  vite: "Vite"
 };
 
 let spritePromise = null;
