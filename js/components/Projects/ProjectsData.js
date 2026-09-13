@@ -35,30 +35,30 @@ export const ProjectData = [
   {
     slug: "conde-clinica",
     title: "Conde Clínica",
-    tagline: "Site institucional e captação de pacientes para clínica de estética em Brasília",
+    tagline: "Sistema de gestão e site para clínica de estética, do agendamento ao prontuário",
     year: "2025 · 2026",
     type: "Freelance",
     featured: true,
     description:
-      "Site institucional da Conde Estética Avançada, clínica de medicina estética em Águas Claras, Brasília. Apresenta os tratamentos, resultados e depoimentos, com agendamento direto pelo WhatsApp. Foi meu primeiro projeto comercial e segue em manutenção, já com um redesenho completo e domínio próprio.",
+      "Plataforma da Conde Estética Avançada: site institucional para captar pacientes e, por trás dele, um sistema de gestão com agenda, prontuário, financeiro e galeria de resultados. Começou como site institucional, meu primeiro projeto comercial, e cresceu para um produto multi-clínica.",
     problem:
-      "A clínica dependia exclusivamente do Instagram para captar pacientes, sem nenhum canal próprio. Não havia como apresentar procedimentos em detalhe nem transformar visitante em agendamento sem uma conversa manual no direct.",
+      "A clínica dependia do Instagram para captar pacientes e de papel e planilha para tocar a operação. Agendamento, ficha de anamnese, evolução do tratamento e cobrança viviam em lugares separados, sem histórico confiável de quem atendeu o quê.",
     solution:
-      "Construí um site institucional que organiza os tratamentos em catálogo, responde as dúvidas mais comuns antes do contato e leva o visitante direto ao WhatsApp já com o procedimento escolhido. Depois da primeira versão, o site passou por um redesenho completo e ganhou domínio próprio.",
+      "Construí um front em Angular sobre uma API REST em PHP com MariaDB, hospedada em servidor compartilhado. O site institucional leva o visitante ao WhatsApp com o procedimento escolhido, e o painel interno concentra agenda, prontuário, financeiro e a galeria de resultados que alimenta a vitrine pública.",
     highlights: [
-      "Catálogo com os tratamentos da clínica, cada um com sua explicação",
-      "Depoimentos, perguntas frequentes e localização para reduzir atrito antes do contato",
-      "Agendamento pelo WhatsApp levando o contexto do procedimento escolhido",
-      "Meta tags, Open Graph, robots.txt e sitemap para busca local em Brasília",
-      "Layout mobile-first: a maior parte do tráfego vem do Instagram"
+      "API REST em PHP com cerca de 70 endpoints sobre MariaDB",
+      "Arquitetura multi-clínica: cada clínica enxerga apenas os próprios dados",
+      "Migrações de schema idempotentes, aplicadas pelo próprio endpoint",
+      "Ambiente local em Docker, com pipeline de CI barrando regressões de estilo e dívida",
+      "Agendamento pelo WhatsApp levando o contexto do procedimento escolhido"
     ],
     learned:
-      "Foi meu primeiro contato com cliente real: levantar requisito com quem não é técnico, lidar com mudança de escopo e manter o site vivo depois da entrega, em vez de considerar o projeto encerrado no deploy.",
+      "Hospedagem compartilhada impõe limites que não aparecem no ambiente local: extensão de PHP ausente, banco sem modo estrito aceitando dado inválido em silêncio, sistema de arquivos sensível a maiúsculas. Aprendi a validar tudo na aplicação e a nunca tratar o ambiente local como espelho da produção.",
     video: null,
     poster: "/assets/posters/conde-clinica.jpg",
     repo: null,
     demo: "https://condeclinica.com",
-    stack: ["angular", "ts", "html", "css", "git"]
+    stack: ["angular", "ts", "php", "mysql", "docker", "html", "css", "git"]
   },
   {
     slug: "petwalker",

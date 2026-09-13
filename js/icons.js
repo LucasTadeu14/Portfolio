@@ -26,7 +26,12 @@ export const ICON_LABELS = {
   github: "GitHub",
   linkedin: "LinkedIn",
   instagram: "Instagram",
-  vercel: "Vercel"
+  vercel: "Vercel",
+  php: "PHP",
+  mysql: "MySQL",
+  docker: "Docker",
+  bootstrap: "Bootstrap",
+  githubactions: "GitHub Actions"
 };
 
 let spritePromise = null;
