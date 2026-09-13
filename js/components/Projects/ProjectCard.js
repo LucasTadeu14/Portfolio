@@ -127,13 +127,16 @@ export function ProjectCard(project, { onCleanup } = {}) {
     actions.appendChild(demoBtn);
   }
 
-  const repoBtn = document.createElement("a");
-  repoBtn.classList.add("btn", "btn_ghost");
-  repoBtn.href = project.repo;
-  repoBtn.target = "_blank";
-  repoBtn.rel = "noopener noreferrer";
-  repoBtn.textContent = "Código";
-  actions.appendChild(repoBtn);
+  /* Projeto de cliente nem sempre tem código público. */
+  if (project.repo) {
+    const repoBtn = document.createElement("a");
+    repoBtn.classList.add("btn", "btn_ghost");
+    repoBtn.href = project.repo;
+    repoBtn.target = "_blank";
+    repoBtn.rel = "noopener noreferrer";
+    repoBtn.textContent = "Código";
+    actions.appendChild(repoBtn);
+  }
 
   body.append(meta, heading, tagline, stack, actions);
   card.append(media, body);

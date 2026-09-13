@@ -49,7 +49,9 @@ export function ProjectDetail({ params, navigate, onCleanup }) {
       externalLink(project.demo, "Ver ao vivo", "btn_primary")
     );
   }
-  actions.appendChild(externalLink(project.repo, "Código no GitHub", "btn_ghost"));
+  if (project.repo) {
+    actions.appendChild(externalLink(project.repo, "Código no GitHub", "btn_ghost"));
+  }
 
   header.append(meta, title, tagline, actions);
 
@@ -57,22 +59,33 @@ export function ProjectDetail({ params, navigate, onCleanup }) {
   const figure = document.createElement("figure");
   figure.classList.add("detail_media");
 
-  const video = document.createElement("video");
-  video.src = project.video;
-  video.poster = project.poster;
-  video.controls = true;
-  video.muted = true;
-  video.loop = true;
-  video.playsInline = true;
-  video.preload = "none";
-  video.setAttribute("aria-label", `Demonstração em vídeo do projeto ${project.title}`);
-  figure.appendChild(video);
+  /* Projeto sem vídeo cai para a imagem: dá para publicar
+     um projeto só com print, sem precisar gravar demo. */
+  if (project.video) {
+    const video = document.createElement("video");
+    video.src = project.video;
+    video.poster = project.poster;
+    video.controls = true;
+    video.muted = true;
+    video.loop = true;
+    video.playsInline = true;
+    video.preload = "none";
+    video.setAttribute("aria-label", `Demonstração em vídeo do projeto ${project.title}`);
+    figure.appendChild(video);
 
-  onCleanup?.(() => {
-    video.pause();
-    video.removeAttribute("src");
-    video.load();
-  });
+    onCleanup?.(() => {
+      video.pause();
+      video.removeAttribute("src");
+      video.load();
+    });
+  } else {
+    const image = document.createElement("img");
+    image.src = project.poster;
+    image.alt = `Captura de tela do projeto ${project.title}`;
+    image.loading = "lazy";
+    image.decoding = "async";
+    figure.appendChild(image);
+  }
 
   /* ── Corpo ─────────────────────────────────── */
   const body = document.createElement("div");

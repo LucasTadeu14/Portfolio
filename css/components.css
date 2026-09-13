@@ -323,10 +323,12 @@
   box-shadow: var(--shadow-lg);
 }
 
-.detail_media video {
+.detail_media video,
+.detail_media img {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: top center;
   background: var(--surface-sunken);
 }
 
