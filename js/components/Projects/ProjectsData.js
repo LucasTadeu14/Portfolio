@@ -8,18 +8,18 @@ export const ProjectData = [
   {
     slug: "cliniclis",
     title: "Cliniclis",
-    tagline: "SaaS de gestão para clínicas, do agendamento ao prontuário e ao financeiro",
+    tagline: "Produto próprio: sistema de gestão sob medida para clínicas, já em operação",
     year: "2026",
     type: "Produto próprio",
     featured: true,
     description:
-      "Sistema de gestão para clínicas médicas e de estética, em operação com clínicas reais. Reúne agenda, prontuário, financeiro, galeria de resultados e controle de equipe num só lugar, com cada clínica isolada da outra.",
+      "Negócio que montei para atender clínicas médicas e de estética: um sistema de gestão que reúne agenda, prontuário, financeiro e galeria de resultados, entregue sob medida para cada clínica, mais o site institucional quando o cliente precisa. Está em operação com clínicas reais.",
     problem:
-      "Clínicas pequenas tocam a operação em papel, planilha e conversa de WhatsApp. Agendamento, ficha de anamnese, evolução do tratamento e cobrança vivem separados, então ninguém sabe ao certo quem atendeu o quê, quanto entrou no mês ou quando um paciente precisa voltar.",
+      "Clínicas pequenas tocam a operação em papel, planilha e conversa de WhatsApp. Agendamento, ficha de anamnese, evolução do tratamento e cobrança vivem separados, então ninguém sabe ao certo quem atendeu o quê, quanto entrou no mês ou quando um paciente precisa voltar. As plataformas prontas do mercado cobram mensalidade e não se dobram ao fluxo de cada clínica.",
     solution:
-      "Construí um produto multi-clínica com front em Angular sobre uma API REST em PHP com MariaDB, rodando em hospedagem compartilhada para caber no orçamento de clínica pequena. Cada clínica enxerga apenas os próprios dados, e os módulos ligam e desligam por cliente.",
+      "Construí um front em Angular sobre uma API REST em PHP com MariaDB, rodando em hospedagem compartilhada para caber no orçamento de clínica pequena. A base é a mesma para todos os clientes, com os dados de cada clínica isolados e os módulos habilitados um a um, o que permite entregar algo sob medida sem manter um sistema diferente por cliente.",
     highlights: [
-      "Multi-clínica: dados isolados por cliente e módulos habilitáveis um a um",
+      "Uma base, várias clínicas: dados isolados por cliente e módulos habilitáveis um a um",
       "Agenda por dia ou semana, por profissional, com bloqueio de horário",
       "Prontuário com fichas configuráveis por template e evolução do tratamento",
       "Financeiro, relatórios, registro de ponto e controle de equipe",
