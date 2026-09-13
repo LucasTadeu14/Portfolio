@@ -47,9 +47,8 @@ js/
   reveal.js             animação de entrada via IntersectionObserver
   components/           uma função por componente, devolvendo nós do DOM
 assets/
-  icons/sprite.svg      17 ícones num único arquivo
-  posters/              primeiro frame de cada vídeo
-  videos/               demos dos projetos
+  icons/sprite.svg      23 ícones num único arquivo
+  posters/              captura de cada projeto
 ```
 
 ## ✨ O que tem aqui
@@ -58,13 +57,14 @@ assets/
 - Router próprio com History API, rotas dinâmicas (`/projects/:slug`) e
   normalização de trailing slash
 - Shell persistente: navbar e footer não são recriados a cada navegação
-- Ciclo de vida com `onMount` / `onCleanup`: timers, observers e vídeos
-  são desligados ao trocar de rota
+- Ciclo de vida com `onMount` / `onCleanup`: timers e observers são
+  desligados ao trocar de rota
 
 **Performance**
 - Zero requests a terceiros no carregamento: os ícones vêm de um sprite
   SVG local (antes eram ~31 `<img>` apontando para um CDN externo)
-- Vídeos com `preload="none"` + poster: nada de vídeo baixa até o hover
+- Capturas com `loading="lazy"` e dimensões declaradas, sem deslocamento
+  de layout ao carregar
 - SDK do EmailJS carregado sob demanda, só na página de contato
 - Headers de cache imutável para `/assets` via `vercel.json`
 

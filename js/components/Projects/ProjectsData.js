@@ -82,7 +82,7 @@ export const ProjectData = [
     ],
     learned:
       "Onde estado global ajuda e onde atrapalha. Separar autenticação e carrinho em dois contextos evitou que uma tela de produto recarregasse por causa de uma mudança de sessão, coisa que um contexto único provocaria.",
-    video: "/assets/videos/PetWalker_preview.mp4",
+    video: null,
     poster: "/assets/posters/petwalker.jpg",
     repo: "https://github.com/LucasTadeu14/PetWalker",
     demo: "https://petwalker.vercel.app",
@@ -105,7 +105,7 @@ export const ProjectData = [
       "Router próprio com rotas dinâmicas, normalização de barra final e metadados por página",
       "Ciclo de vida com onMount e onCleanup: nada de timer sobrevivendo à troca de rota",
       "Ícones num sprite SVG local, em vez de dezenas de requisições a um CDN de terceiro",
-      "Vídeos só baixam no hover, com o primeiro quadro servindo de capa",
+      "Prévias com carregamento tardio e dimensões declaradas, sem deslocar o layout",
       "Open Graph e dados estruturados para o link render preview ao ser compartilhado",
       "Zero dependências em runtime e nenhum build step"
     ],
