@@ -46,7 +46,7 @@ export function ProjectDetail({ params, navigate, onCleanup }) {
 
   if (project.demo) {
     actions.appendChild(
-      externalLink(project.demo, "Ver ao vivo", "btn_primary")
+      externalLink(project.demo, project.demoLabel ?? "Ver ao vivo", "btn_primary")
     );
   }
   if (project.repo) {

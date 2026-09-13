@@ -123,7 +123,7 @@ export function ProjectCard(project, { onCleanup } = {}) {
     demoBtn.href = project.demo;
     demoBtn.target = "_blank";
     demoBtn.rel = "noopener noreferrer";
-    demoBtn.textContent = "Demo ao vivo";
+    demoBtn.textContent = project.demoLabel ?? "Demo ao vivo";
     actions.appendChild(demoBtn);
   }
 

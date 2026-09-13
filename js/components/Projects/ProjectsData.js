@@ -6,6 +6,37 @@
 
 export const ProjectData = [
   {
+    slug: "cliniclis",
+    title: "Cliniclis",
+    tagline: "SaaS de gestão para clínicas, do agendamento ao prontuário e ao financeiro",
+    year: "2026",
+    type: "Produto próprio",
+    featured: true,
+    description:
+      "Sistema de gestão para clínicas médicas e de estética, em operação com clínicas reais. Reúne agenda, prontuário, financeiro, galeria de resultados e controle de equipe num só lugar, com cada clínica isolada da outra.",
+    problem:
+      "Clínicas pequenas tocam a operação em papel, planilha e conversa de WhatsApp. Agendamento, ficha de anamnese, evolução do tratamento e cobrança vivem separados, então ninguém sabe ao certo quem atendeu o quê, quanto entrou no mês ou quando um paciente precisa voltar.",
+    solution:
+      "Construí um produto multi-clínica com front em Angular sobre uma API REST em PHP com MariaDB, rodando em hospedagem compartilhada para caber no orçamento de clínica pequena. Cada clínica enxerga apenas os próprios dados, e os módulos ligam e desligam por cliente.",
+    highlights: [
+      "Multi-clínica: dados isolados por cliente e módulos habilitáveis um a um",
+      "Agenda por dia ou semana, por profissional, com bloqueio de horário",
+      "Prontuário com fichas configuráveis por template e evolução do tratamento",
+      "Financeiro, relatórios, registro de ponto e controle de equipe",
+      "Galeria de resultados que alimenta uma vitrine pública por link rotacionável",
+      "API REST em PHP com cerca de 70 endpoints e migrações idempotentes",
+      "Ambiente local em Docker e CI barrando regressões de estilo e dívida técnica"
+    ],
+    learned:
+      "Hospedagem compartilhada impõe limites que não aparecem no ambiente local: extensão de PHP ausente, banco sem modo estrito aceitando dado inválido em silêncio, sistema de arquivos sensível a maiúsculas. Aprendi a validar tudo na aplicação e a nunca tratar o ambiente local como espelho da produção.",
+    video: null,
+    poster: "/assets/posters/cliniclis.jpg",
+    repo: null,
+    demo: "https://cliniclis.com",
+    demoLabel: "Site do produto",
+    stack: ["angular", "ts", "php", "mysql", "docker", "bootstrap", "git"]
+  },
+  {
     slug: "mirelle-sine",
     title: "Mirelle Sine",
     tagline: "Portfólio bilíngue para engenheira de iOS mirando vagas internacionais",
@@ -35,30 +66,30 @@ export const ProjectData = [
   {
     slug: "conde-clinica",
     title: "Conde Clínica",
-    tagline: "Sistema de gestão e site para clínica de estética, do agendamento ao prontuário",
+    tagline: "Site institucional e captação de pacientes para clínica de estética em Brasília",
     year: "2025 · 2026",
     type: "Freelance",
-    featured: true,
+    featured: false,
     description:
-      "Plataforma da Conde Estética Avançada: site institucional para captar pacientes e, por trás dele, um sistema de gestão com agenda, prontuário, financeiro e galeria de resultados. Começou como site institucional, meu primeiro projeto comercial, e cresceu para um produto multi-clínica.",
+      "Site institucional da Conde Estética Avançada, clínica de medicina estética em Águas Claras, Brasília. Apresenta os tratamentos, resultados e depoimentos, com agendamento direto pelo WhatsApp. Foi meu primeiro projeto comercial e segue em manutenção, já com um redesenho completo e domínio próprio.",
     problem:
-      "A clínica dependia do Instagram para captar pacientes e de papel e planilha para tocar a operação. Agendamento, ficha de anamnese, evolução do tratamento e cobrança viviam em lugares separados, sem histórico confiável de quem atendeu o quê.",
+      "A clínica dependia exclusivamente do Instagram para captar pacientes, sem nenhum canal próprio. Não havia como apresentar procedimentos em detalhe nem transformar visitante em agendamento sem uma conversa manual no direct.",
     solution:
-      "Construí um front em Angular sobre uma API REST em PHP com MariaDB, hospedada em servidor compartilhado. O site institucional leva o visitante ao WhatsApp com o procedimento escolhido, e o painel interno concentra agenda, prontuário, financeiro e a galeria de resultados que alimenta a vitrine pública.",
+      "Construí um site institucional que organiza os tratamentos em catálogo, responde as dúvidas mais comuns antes do contato e leva o visitante direto ao WhatsApp já com o procedimento escolhido. Depois da primeira versão, o site passou por um redesenho completo e ganhou domínio próprio.",
     highlights: [
-      "API REST em PHP com cerca de 70 endpoints sobre MariaDB",
-      "Arquitetura multi-clínica: cada clínica enxerga apenas os próprios dados",
-      "Migrações de schema idempotentes, aplicadas pelo próprio endpoint",
-      "Ambiente local em Docker, com pipeline de CI barrando regressões de estilo e dívida",
-      "Agendamento pelo WhatsApp levando o contexto do procedimento escolhido"
+      "Catálogo com os tratamentos da clínica, cada um com sua explicação",
+      "Depoimentos, perguntas frequentes e localização para reduzir atrito antes do contato",
+      "Agendamento pelo WhatsApp levando o contexto do procedimento escolhido",
+      "Meta tags, Open Graph, robots.txt e sitemap para busca local em Brasília",
+      "Layout mobile-first: a maior parte do tráfego vem do Instagram"
     ],
     learned:
-      "Hospedagem compartilhada impõe limites que não aparecem no ambiente local: extensão de PHP ausente, banco sem modo estrito aceitando dado inválido em silêncio, sistema de arquivos sensível a maiúsculas. Aprendi a validar tudo na aplicação e a nunca tratar o ambiente local como espelho da produção.",
+      "Foi meu primeiro contato com cliente real: levantar requisito com quem não é técnico, lidar com mudança de escopo e manter o site vivo depois da entrega, em vez de considerar o projeto encerrado no deploy.",
     video: null,
     poster: "/assets/posters/conde-clinica.jpg",
     repo: null,
     demo: "https://condeclinica.com",
-    stack: ["angular", "ts", "php", "mysql", "docker", "html", "css", "git"]
+    stack: ["angular", "ts", "html", "css", "git"]
   },
   {
     slug: "petwalker",
