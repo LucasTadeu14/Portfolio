@@ -1,4 +1,4 @@
-# 💻 Portfólio — Lucas Conde
+# 💻 Portfólio | Lucas Conde
 
 > Portfólio pessoal feito **sem frameworks**: roteamento, renderização e
 > animações são código próprio, sem build step e sem dependências em runtime.
@@ -10,8 +10,8 @@
 ## 🚀 Sobre
 
 Portfólio construído do zero com HTML, CSS e JavaScript puro (ES Modules).
-A proposta não é recusar frameworks por princípio — é entender o que eles
-resolvem. Reimplementar roteamento, ciclo de vida e animações na mão deixa
+A proposta não é recusar frameworks por princípio, e sim entender o que
+eles resolvem. Reimplementar roteamento, ciclo de vida e animações na mão deixa
 claro o custo de cada abstração.
 
 ## ⚡ Como rodar
@@ -27,7 +27,7 @@ node dev-server.mjs
 # ▸ http://localhost:3000
 ```
 
-Só precisa do Node instalado — `dev-server.mjs` não tem dependências e
+Só precisa do Node instalado. O `dev-server.mjs` não tem dependências e
 replica o rewrite da Vercel (qualquer rota cai no `index.html`).
 
 ## 🏗 Estrutura
@@ -58,7 +58,7 @@ assets/
 - Router próprio com History API, rotas dinâmicas (`/projects/:slug`) e
   normalização de trailing slash
 - Shell persistente: navbar e footer não são recriados a cada navegação
-- Ciclo de vida com `onMount` / `onCleanup` — timers, observers e vídeos
+- Ciclo de vida com `onMount` / `onCleanup`: timers, observers e vídeos
   são desligados ao trocar de rota
 
 **Performance**

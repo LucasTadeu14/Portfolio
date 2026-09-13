@@ -11,7 +11,7 @@ export function ProjectDetail({ params, navigate, onCleanup }) {
         code: "404",
         message: "Esse projeto não existe (ou mudou de endereço)."
       }),
-      title: "Projeto não encontrado — Lucas Conde",
+      title: "Projeto não encontrado | Lucas Conde",
       description: "O projeto procurado não foi encontrado."
     };
   }
@@ -141,7 +141,7 @@ export function ProjectDetail({ params, navigate, onCleanup }) {
 
   return {
     el: article,
-    title: `${project.title} — Lucas Conde`,
+    title: `${project.title} | Lucas Conde`,
     description: project.tagline
   };
 }

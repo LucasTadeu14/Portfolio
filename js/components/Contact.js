@@ -101,7 +101,7 @@ export function Contact() {
         message: message.input.value.trim()
       });
 
-      setStatus(status, "Mensagem enviada. Obrigado — respondo em breve!", "success");
+      setStatus(status, "Mensagem enviada. Obrigado, respondo em breve!", "success");
       form.reset();
       fields.forEach(clearError);
     } catch (error) {

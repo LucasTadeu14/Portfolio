@@ -15,31 +15,31 @@ const routes = [
   {
     path: "/",
     view: Home,
-    title: "Lucas Conde — Desenvolvedor FullStack",
+    title: "Lucas Conde | Desenvolvedor FullStack",
     description: "Portfólio de Lucas Conde, desenvolvedor FullStack focado em React, TypeScript e Node.js."
   },
   {
     path: "/about",
     view: About,
-    title: `Sobre — ${SITE_NAME}`,
+    title: `Sobre | ${SITE_NAME}`,
     description: "Quem sou, como trabalho e as tecnologias que uso no dia a dia."
   },
   {
     path: "/projects",
     view: Projects,
-    title: `Projetos — ${SITE_NAME}`,
+    title: `Projetos | ${SITE_NAME}`,
     description: "Projetos de front-end e full-stack: React, TypeScript, Angular e JavaScript puro."
   },
   {
     path: "/projects/:slug",
     view: ProjectDetail,
-    title: `Projeto — ${SITE_NAME}`,
+    title: `Projeto | ${SITE_NAME}`,
     description: "Detalhes técnicos do projeto: problema, decisões e stack."
   },
   {
     path: "/contact",
     view: Contact,
-    title: `Contato — ${SITE_NAME}`,
+    title: `Contato | ${SITE_NAME}`,
     description: "Fale comigo por e-mail, LinkedIn ou GitHub."
   }
 ];
@@ -48,7 +48,7 @@ const app = document.getElementById("app");
 app.classList.add("main");
 
 /* Cleanups registrados pela view atual (timers, observers,
-   listeners). Rodam antes de trocar de página — sem isso a
+   listeners). Rodam antes de trocar de página. Sem isso a
    animação do terminal continua escrevendo num nó já descartado. */
 let cleanups = [];
 
@@ -138,7 +138,7 @@ function render() {
 
   if (!match) {
     updateMeta({
-      title: `Página não encontrada — ${SITE_NAME}`,
+      title: `Página não encontrada | ${SITE_NAME}`,
       description: "A página que você procurou não existe."
     });
     pageContainer.appendChild(ErrorPage(navigate));

@@ -8,7 +8,7 @@ export const ProjectData = [
   {
     slug: "conde-clinica",
     title: "Conde Clínica",
-    tagline: "Primeiro projeto comercial — site institucional para clínica de estética",
+    tagline: "Primeiro projeto comercial: site institucional para clínica de estética",
     year: "2025",
     type: "Freelance",
     featured: true,
@@ -17,7 +17,7 @@ export const ProjectData = [
     problem:
       "A clínica dependia exclusivamente do Instagram para captar pacientes, sem nenhum canal próprio. Não havia como apresentar procedimentos em detalhe nem transformar visitante em agendamento sem uma conversa manual no direct.",
     solution:
-      "Construí um site institucional com catálogo de procedimentos, galeria de resultados e um fluxo direto para o WhatsApp com mensagem pré-preenchida por serviço — o visitante chega na conversa já dizendo o que quer.",
+      "Construí um site institucional com catálogo de procedimentos, galeria de resultados e um fluxo direto para o WhatsApp com mensagem pré-preenchida por serviço, de modo que o visitante chega na conversa já dizendo o que quer.",
     highlights: [
       "Integração com WhatsApp levando o contexto do procedimento escolhido",
       "Layout mobile-first: a maior parte do tráfego vem do Instagram",
@@ -61,7 +61,7 @@ export const ProjectData = [
   {
     slug: "portfolio",
     title: "Portfólio (sem framework)",
-    tagline: "Este site — SPA, router e animações escritos do zero",
+    tagline: "Este site: SPA, router e animações escritos do zero",
     year: "2026",
     type: "Projeto pessoal",
     featured: false,
@@ -70,7 +70,7 @@ export const ProjectData = [
     problem:
       "É fácil montar um portfólio com um template pronto e não conseguir explicar uma linha dele. Eu queria o contrário: um site onde cada comportamento fosse algo que eu soubesse defender numa entrevista.",
     solution:
-      "Escrevi um router client-side com a History API, um sistema de componentes baseado em funções que devolvem nós do DOM, e animações com IntersectionObserver — tudo em JavaScript puro, servido sem bundler.",
+      "Escrevi um router client-side com a History API, um sistema de componentes baseado em funções que devolvem nós do DOM, e animações com IntersectionObserver, tudo em JavaScript puro e servido sem bundler.",
     highlights: [
       "Router próprio com History API, rotas dinâmicas e ciclo de limpeza",
       "Zero dependências em runtime e nenhum build step",

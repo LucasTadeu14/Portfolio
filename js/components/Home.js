@@ -161,7 +161,7 @@ export function Home({ onCleanup, onMount } = {}) {
 }
 
 /* Projetos em destaque logo abaixo do hero: dá ao visitante
-   o conteúdo principal sem exigir mais um clique — e faz o
+   o conteúdo principal sem exigir mais um clique, e faz o
    indicador de scroll apontar para algo de verdade. */
 function FeaturedProjects({ onCleanup, onMount }) {
   const featured = ProjectData.filter(project => project.featured);
@@ -247,7 +247,7 @@ function buildTerminal(onCleanup) {
 
 /**
  * Digita linha a linha. O timer é registrado no cleanup da
- * rota — antes, sair da Home no meio da animação deixava
+ * rota. Antes, sair da Home no meio da animação deixava
  * setTimeout escrevendo num <pre> já descartado.
  */
 function typeLines(pre, lines, delay, onCleanup) {

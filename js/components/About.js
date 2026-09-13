@@ -5,19 +5,19 @@ import { revealOnScroll } from "../reveal.js";
    no meio do markup. */
 const TIMELINE = [
   {
-    period: "2026 — agora",
+    period: "2026 até hoje",
     title: "Desenvolvimento freelance",
     text: "Primeiros projetos comerciais, levantando requisito direto com o cliente e entregando em prazo combinado."
   },
   {
-    period: "2024 — agora",
+    period: "2024 até hoje",
     title: "Ciência da Computação",
     text: "Graduação em andamento, com foco em estrutura de dados, redes e engenharia de software."
   },
   {
     period: "2024",
     title: "Início no front-end",
-    text: "Comecei por HTML, CSS e JavaScript puro antes de partir para React — a ordem que me fez entender o que o framework resolve."
+    text: "Comecei por HTML, CSS e JavaScript puro antes de partir para React, na ordem que me fez entender o que o framework resolve."
   }
 ];
 
@@ -43,7 +43,7 @@ export function About({ onCleanup, onMount } = {}) {
     </p>
     <p>
       Comecei pelo básico de propósito: HTML, CSS e JavaScript puro antes de
-      qualquer framework. Este portfólio, por exemplo, não usa nenhum — o
+      qualquer framework. Este portfólio, por exemplo, não usa nenhum: o
       roteamento e as animações são código meu. Isso não é birra com ferramenta,
       é o caminho que me fez entender o que cada abstração está resolvendo.
     </p>

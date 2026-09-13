@@ -46,8 +46,8 @@ export function loadSprite() {
     .then(svg => {
       const holder = document.createElement("div");
       holder.setAttribute("aria-hidden", "true");
-      /* Escondido por dimensão, não com display:none —
-         gradientes dentro de <symbol> não resolvem quando o
+      /* Escondido por dimensão, não com display:none.
+         Gradientes dentro de <symbol> não resolvem quando o
          container está display:none (o ícone do Tailwind
          sumia por isso). */
       holder.style.cssText =

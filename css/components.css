@@ -616,8 +616,8 @@
   min-height: 1em;
 }
 
-/* Honeypot: fora da tela, mas não display:none —
-   alguns bots ignoram campos escondidos assim. */
+/* Honeypot: fora da tela, mas não display:none,
+   porque alguns bots ignoram campos escondidos assim. */
 .contact_hp {
   position: absolute;
   left: -9999px;
