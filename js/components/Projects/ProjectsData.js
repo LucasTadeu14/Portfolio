@@ -35,27 +35,29 @@ export const ProjectData = [
   {
     slug: "conde-clinica",
     title: "Conde Clínica",
-    tagline: "Primeiro projeto comercial: site institucional para clínica de estética",
-    year: "2025",
+    tagline: "Site institucional e captação de pacientes para clínica de estética em Brasília",
+    year: "2025 · 2026",
     type: "Freelance",
     featured: true,
     description:
-      "Site institucional desenvolvido como freelance para a Conde Estética Avançada, clínica de medicina estética. Apresenta os serviços, resultados e integra com WhatsApp para agendamentos.",
+      "Site institucional da Conde Estética Avançada, clínica de medicina estética em Águas Claras, Brasília. Apresenta os tratamentos, resultados e depoimentos, com agendamento direto pelo WhatsApp. Foi meu primeiro projeto comercial e segue em manutenção, já com um redesenho completo e domínio próprio.",
     problem:
       "A clínica dependia exclusivamente do Instagram para captar pacientes, sem nenhum canal próprio. Não havia como apresentar procedimentos em detalhe nem transformar visitante em agendamento sem uma conversa manual no direct.",
     solution:
-      "Construí um site institucional com catálogo de procedimentos, galeria de resultados e um fluxo direto para o WhatsApp com mensagem pré-preenchida por serviço, de modo que o visitante chega na conversa já dizendo o que quer.",
+      "Construí um site institucional que organiza os tratamentos em catálogo, responde as dúvidas mais comuns antes do contato e leva o visitante direto ao WhatsApp já com o procedimento escolhido. Depois da primeira versão, o site passou por um redesenho completo e ganhou domínio próprio.",
     highlights: [
-      "Integração com WhatsApp levando o contexto do procedimento escolhido",
-      "Layout mobile-first: a maior parte do tráfego vem do Instagram",
-      "Componentes Angular reaproveitados entre as seções de serviço"
+      "Catálogo com os tratamentos da clínica, cada um com sua explicação",
+      "Depoimentos, perguntas frequentes e localização para reduzir atrito antes do contato",
+      "Agendamento pelo WhatsApp levando o contexto do procedimento escolhido",
+      "Meta tags, Open Graph, robots.txt e sitemap para busca local em Brasília",
+      "Layout mobile-first: a maior parte do tráfego vem do Instagram"
     ],
     learned:
-      "Foi meu primeiro contato com cliente real: levantar requisito com quem não é técnico, lidar com mudança de escopo e entregar em prazo combinado.",
-    video: "/assets/videos/condeClinicaPreview.mp4",
+      "Foi meu primeiro contato com cliente real: levantar requisito com quem não é técnico, lidar com mudança de escopo e manter o site vivo depois da entrega, em vez de considerar o projeto encerrado no deploy.",
+    video: null,
     poster: "/assets/posters/conde-clinica.jpg",
     repo: "https://github.com/LucasTadeu14/Conde_clinica",
-    demo: null,
+    demo: "https://condeclinica.com",
     stack: ["angular", "ts", "html", "css", "git"]
   },
   {
