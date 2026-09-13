@@ -11,16 +11,25 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  display: flex;
-  align-items: center;
-  gap: var(--space-4);
   width: 100%;
-  min-height: var(--nav-height);
-  padding: var(--space-3) var(--space-6);
   background: rgba(28, 27, 45, 0.82);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Mesma largura máxima e mesmo recuo do conteúdo das
+   páginas, para a marca cair na mesma linha vertical do
+   título logo abaixo. */
+.nav_inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  width: 100%;
+  max-width: var(--max-width);
+  min-height: var(--nav-height);
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-4);
 }
 
 .nav_brand {
@@ -710,7 +719,7 @@
 /* ── Footer ────────────────────────────────────── */
 .footer {
   margin-top: auto;
-  padding: var(--space-12) var(--space-6) var(--space-8);
+  padding: var(--space-12) 0 var(--space-8);
   background: var(--surface-sunken);
   border-top: 1px solid var(--border);
 }
@@ -723,6 +732,7 @@
   gap: var(--space-6);
   max-width: var(--max-width);
   margin: 0 auto var(--space-8);
+  padding: 0 var(--space-4);
 }
 
 .footer_brand {
@@ -762,7 +772,7 @@
 .footer_copy {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding-top: var(--space-6);
+  padding: var(--space-6) var(--space-4) 0;
   border-top: 1px solid var(--border);
   font-size: var(--text-xs);
   color: var(--text-dim);
@@ -777,9 +787,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 92%;
+  width: 100%;
   max-width: var(--max-width);
-  padding: 10vh 0 var(--space-16);
+  /* Mesmo recuo lateral de .section e .nav_inner, para o
+     nome cair na mesma linha vertical da marca no header. */
+  padding: 10vh var(--space-4) var(--space-16);
 }
 
 .Home_layout {
@@ -1140,8 +1152,14 @@
 @media (max-width: 960px) {
   .Home_layout {
     flex-direction: column;
+    align-items: stretch;
     gap: 36px;
   }
+
+  /* Em coluna, o align-items:center do desktop encolhia a
+     coluna de texto e a centralizava, deixando o nome fora
+     da linha da marca no header. */
+  .Home_left { width: 100%; }
 
   .Home_right {
     flex: none;
@@ -1150,7 +1168,7 @@
     align-self: center;
   }
 
-  .Home_text { padding: 8vh 0 var(--space-12); }
+  .Home_text { padding: 8vh var(--space-4) var(--space-12); }
 }
 
 @media (max-width: 768px) {
@@ -1163,6 +1181,7 @@
     top: 100%;
     left: 0;
     right: 0;
+    width: 100%;
     flex-direction: column;
     align-items: stretch;
     gap: var(--space-1);
@@ -1192,8 +1211,7 @@
   }
 
   .Home_text {
-    width: 92%;
-    padding: 6vh 0 var(--space-12);
+    padding: 6vh var(--space-4) var(--space-12);
     align-items: center;
   }
 

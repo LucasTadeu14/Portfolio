@@ -56,7 +56,7 @@ export const ProjectData = [
       "Foi meu primeiro contato com cliente real: levantar requisito com quem não é técnico, lidar com mudança de escopo e manter o site vivo depois da entrega, em vez de considerar o projeto encerrado no deploy.",
     video: null,
     poster: "/assets/posters/conde-clinica.jpg",
-    repo: "https://github.com/LucasTadeu14/Conde_clinica",
+    repo: null,
     demo: "https://condeclinica.com",
     stack: ["angular", "ts", "html", "css", "git"]
   },
@@ -66,7 +66,7 @@ export const ProjectData = [
     tagline: "SPA em React simulando um fluxo de compra completo",
     year: "2025",
     type: "Projeto pessoal",
-    featured: true,
+    featured: false,
     description:
       "Aplicação em React com foco na simulação de um fluxo real de usuário: navegação entre páginas, gerenciamento de itens e carrinho de compras interativo.",
     problem:

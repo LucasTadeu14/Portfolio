@@ -10,6 +10,13 @@ export function Navbar() {
   nav.classList.add("nav_bar");
   nav.setAttribute("aria-label", "Navegação principal");
 
+  /* A barra ocupa a largura toda (fundo e borda), mas o
+     conteúdo vive num container da mesma largura máxima do
+     resto do site, senão a marca fica desalinhada do título
+     da página logo abaixo. */
+  const inner = document.createElement("div");
+  inner.classList.add("nav_inner");
+
   const brand = document.createElement("a");
   brand.classList.add("nav_brand");
   brand.href = "/";
@@ -57,7 +64,8 @@ export function Navbar() {
     if (event.key === "Escape") closeMenu();
   });
 
-  nav.append(brand, hamburger, links);
+  inner.append(brand, hamburger, links);
+  nav.appendChild(inner);
   return nav;
 }
 
