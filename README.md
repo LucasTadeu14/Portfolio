@@ -49,6 +49,18 @@ js/
 assets/
   icons/sprite.svg      23 ícones num único arquivo
   posters/              captura de cada projeto
+  docs/                 currículos em PDF (PT e EN)
+cv-source/              HTML dos currículos, de onde saem os PDFs
+```
+
+Para atualizar um currículo, edite `cv-source/cv-pt.html` ou `cv-en.html`
+e gere o PDF de novo com o Chrome:
+
+```bash
+CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+"$CHROME" --headless=new --no-pdf-header-footer \
+  --print-to-pdf="$PWD/assets/docs/Curriculo_Lucas_Tadeu.pdf" \
+  "file://$PWD/cv-source/cv-pt.html"
 ```
 
 ## ✨ O que tem aqui

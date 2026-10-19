@@ -1,0 +1,18 @@
+@page{size:A4;margin:13mm 15mm}
+*{box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;color:#1d1d1f;font-size:9.6pt;line-height:1.4;margin:0}
+h1{font-size:22pt;margin:0;letter-spacing:-.01em}
+.role{font-size:11pt;color:#4f46e5;font-weight:600;margin-top:1px}
+.meta{color:#6e6e73;font-size:8.8pt;margin-top:4px}
+.meta a{color:#6e6e73;text-decoration:none}
+h2{font-size:8.8pt;text-transform:uppercase;letter-spacing:.12em;color:#4f46e5;border-bottom:1px solid #e5e5ea;padding-bottom:3px;margin:11px 0 6px}
+p{margin:0}
+.item{margin-bottom:7px}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.t{font-weight:600}
+.d{color:#6e6e73;font-size:8.8pt;white-space:nowrap}
+.sub{color:#424245;font-size:8.8pt}
+ul{margin:3px 0 0 15px;padding:0}
+li{margin:1.5px 0}
+.skills p{margin:2px 0}
+.skills b{display:inline-block;min-width:140px}

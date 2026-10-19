@@ -75,7 +75,7 @@ export function Home({ onCleanup, onMount } = {}) {
   const description = document.createElement("p");
   description.classList.add("Home_desc");
   description.textContent =
-    "Graduando em Ciência da Computação. Criei e mantenho o Cliniclis, sistema de gestão para clínicas feito em PHP e Angular, em produção com clínicas reais. Também entrego sites e SPAs em React e JavaScript puro.";
+    "Graduando em Ciência da Computação. Criei e mantenho o Cliniclis, sistema de gestão para clínicas feito em PHP e Angular, em produção com clínicas reais. Também crio sites e landing pages para clientes, em Angular, React e JavaScript puro.";
 
   const pillsRow = document.createElement("ul");
   pillsRow.classList.add("Home_pills");

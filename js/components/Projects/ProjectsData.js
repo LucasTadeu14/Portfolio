@@ -44,9 +44,9 @@ export const ProjectData = [
     type: "Freelance",
     featured: true,
     description:
-      "Site de portfólio desenvolvido para Mirelle Sine, engenheira de iOS. Apresenta sete aplicativos publicados, métricas de impacto e um estudo de caso em destaque, em inglês e português.",
+      "Site de portfólio desenvolvido para Mirelle Sine, engenheira de iOS. Apresenta dez aplicativos publicados, métricas de impacto e um estudo de caso em destaque, em inglês e português.",
     problem:
-      "A cliente buscava vagas de engenharia iOS no exterior e precisava de um site que funcionasse para recrutador brasileiro e estrangeiro sem manter duas versões separadas. O conteúdo também é denso: sete apps, métricas e um estudo de caso longo, tudo competindo pela mesma atenção.",
+      "A cliente buscava vagas de engenharia iOS no exterior e precisava de um site que funcionasse para recrutador brasileiro e estrangeiro sem manter duas versões separadas. O conteúdo também é denso: dez apps, métricas e um estudo de caso longo, tudo competindo pela mesma atenção.",
     solution:
       "Construí o site em JavaScript puro, com uma camada de internacionalização própria que troca EN e PT direto no DOM, sem recarregar a página nem duplicar HTML. A interface segue a linguagem visual da Apple, que é o ecossistema onde a cliente trabalha, e organiza o conteúdo em seções navegáveis.",
     highlights: [

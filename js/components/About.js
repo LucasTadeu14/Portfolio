@@ -15,7 +15,7 @@ const TIMELINE = [
     text: "Sites para clientes como a Conde Clínica e a Mirelle Sine, levantando requisito direto com quem contrata e mantendo o site vivo depois da entrega."
   },
   {
-    period: "2024 até hoje",
+    period: "2023 até hoje",
     title: "Ciência da Computação",
     text: "Graduação em andamento, com foco em estrutura de dados, redes e engenharia de software."
   },
@@ -55,7 +55,8 @@ export function About({ onCleanup, onMount } = {}) {
       é o caminho que me fez entender o que cada abstração está resolvendo.
     </p>
     <p>
-      Agora procuro minha primeira vaga num time de desenvolvimento, de preferência
+      Hoje atendo projetos freelance de sites, landing pages e sistemas web, e
+      também estou aberto a uma vaga num time de desenvolvimento, de preferência
       onde eu possa revisar código com gente mais experiente e crescer rápido.
     </p>
   `;
