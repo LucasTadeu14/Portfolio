@@ -8,24 +8,24 @@ export const ProjectData = [
   {
     slug: "cliniclis",
     title: "Cliniclis",
-    tagline: "Produto próprio: sistema de gestão sob medida para clínicas, já em operação",
+    tagline: "Produto próprio: SaaS de gestão para clínicas em PHP e Angular, em produção",
     year: "2026",
     type: "Produto próprio",
     featured: true,
     description:
-      "Negócio que montei para atender clínicas médicas e de estética: um sistema de gestão que reúne agenda, prontuário, financeiro e galeria de resultados, entregue sob medida para cada clínica, mais o site institucional quando o cliente precisa. Está em operação com clínicas reais.",
+      "SaaS que criei e mantenho sozinho para clínicas médicas e estéticas: agenda, ficha com fotos de evolução, financeiro, relatórios, contratos com assinatura eletrônica e confirmação por WhatsApp num só sistema. É vendido por assinatura em dois planos e está em operação com clínicas reais. Assinantes também podem contratar o site institucional da clínica.",
     problem:
-      "Clínicas pequenas tocam a operação em papel, planilha e conversa de WhatsApp. Agendamento, ficha de anamnese, evolução do tratamento e cobrança vivem separados, então ninguém sabe ao certo quem atendeu o quê, quanto entrou no mês ou quando um paciente precisa voltar. As plataformas prontas do mercado cobram mensalidade e não se dobram ao fluxo de cada clínica.",
+      "Clínicas pequenas tocam a operação em papel, planilha e conversa de WhatsApp. Agendamento, anamnese, evolução do tratamento e cobrança vivem separados, então ninguém sabe ao certo quem atendeu o quê, quanto entrou no mês ou quando um paciente precisa voltar. As plataformas prontas costumam ser genéricas e ter suporte por ticket, longe de quem desenvolve.",
     solution:
-      "Construí um front em Angular sobre uma API REST em PHP com MariaDB, rodando em hospedagem compartilhada para caber no orçamento de clínica pequena. A base é a mesma para todos os clientes, com os dados de cada clínica isolados e os módulos habilitados um a um, o que permite entregar algo sob medida sem manter um sistema diferente por cliente.",
+      "Escrevi uma API REST em PHP puro, sem framework, sobre MariaDB, e um front em Angular com Bootstrap. Tudo roda em hospedagem compartilhada, o que mantém o custo baixo o bastante para clínica pequena. Uma única instalação atende todas as clínicas: os dados são isolados por clínica a partir do token de sessão, cada uma recebe a cor da sua marca, e o plano contratado liga ou desliga módulos tanto na API quanto nas rotas do front.",
     highlights: [
-      "Uma base, várias clínicas: dados isolados por cliente e módulos habilitáveis um a um",
-      "Agenda por dia ou semana, por profissional, com bloqueio de horário",
-      "Prontuário com fichas configuráveis por template e evolução do tratamento",
-      "Financeiro, relatórios, registro de ponto e controle de equipe",
-      "Galeria de resultados que alimenta uma vitrine pública por link rotacionável",
-      "API REST em PHP com cerca de 70 endpoints e migrações idempotentes",
-      "Ambiente local em Docker e CI barrando regressões de estilo e dívida técnica"
+      "PHP puro, sem framework: cerca de 70 endpoints e 31 mil linhas de back-end",
+      "Multi-tenant: dados isolados por clínica, com a clínica resolvida pelo token de sessão",
+      "Planos Essencial e Completo controlando módulos na API e nos guards do Angular",
+      "Contratos assinados pelo celular: link de uso único, conferência de CPF, hash SHA-256 e PDF com QR code de verificação",
+      "Senhas em bcrypt com migração transparente no login, rate limit e CORS por lista exata de origens",
+      "Agenda por profissional com histórico de alterações, retornos e confirmação por WhatsApp em 1 clique",
+      "Migrações idempotentes, ambiente local em Docker e CI com testes em Vitest e travas de dívida técnica"
     ],
     learned:
       "Hospedagem compartilhada impõe limites que não aparecem no ambiente local: extensão de PHP ausente, banco sem modo estrito aceitando dado inválido em silêncio, sistema de arquivos sensível a maiúsculas. Aprendi a validar tudo na aplicação e a nunca tratar o ambiente local como espelho da produção.",
@@ -34,7 +34,7 @@ export const ProjectData = [
     repo: null,
     demo: "https://cliniclis.com",
     demoLabel: "Site do produto",
-    stack: ["angular", "ts", "php", "mysql", "docker", "bootstrap", "git"]
+    stack: ["php", "mysql", "angular", "ts", "bootstrap", "docker", "githubactions", "git"]
   },
   {
     slug: "mirelle-sine",

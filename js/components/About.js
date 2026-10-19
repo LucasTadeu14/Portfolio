@@ -6,8 +6,13 @@ import { revealOnScroll } from "../reveal.js";
 const TIMELINE = [
   {
     period: "2026 até hoje",
+    title: "Cliniclis, produto próprio",
+    text: "Criei e mantenho um SaaS de gestão para clínicas em PHP e Angular, já em operação com clínicas reais. Cuido de tudo: API, banco, front, deploy e suporte direto às clínicas."
+  },
+  {
+    period: "2025 até hoje",
     title: "Desenvolvimento freelance",
-    text: "Primeiros projetos comerciais, levantando requisito direto com o cliente e entregando em prazo combinado."
+    text: "Sites para clientes como a Conde Clínica e a Mirelle Sine, levantando requisito direto com quem contrata e mantendo o site vivo depois da entrega."
   },
   {
     period: "2024 até hoje",
@@ -37,19 +42,21 @@ export function About({ onCleanup, onMount } = {}) {
   intro.innerHTML = `
     <p>
       Sou desenvolvedor FullStack e graduando em Ciência da Computação.
-      Trabalho principalmente com <strong>React</strong>, <strong>TypeScript</strong>
-      e <strong>Node.js</strong>, construindo interfaces que precisam ser rápidas
-      tanto para quem usa quanto para quem dá manutenção.
+      Hoje trabalho principalmente com <strong>PHP</strong>, <strong>MySQL</strong>,
+      <strong>Angular</strong> e <strong>TypeScript</strong>: é a stack do
+      <a href="/projects/cliniclis">Cliniclis</a>, o sistema de gestão para clínicas
+      que criei e mantenho em produção. Cuido dele de ponta a ponta, da API e do
+      banco ao front, ao deploy e ao suporte direto às clínicas.
     </p>
     <p>
-      Comecei pelo básico de propósito: HTML, CSS e JavaScript puro antes de
-      qualquer framework. Este portfólio, por exemplo, não usa nenhum: o
+      Também uso <strong>React</strong>, como no PetWalker. Mas comecei pelo
+      básico de propósito: HTML, CSS e JavaScript puro antes de qualquer framework. Este portfólio, por exemplo, não usa nenhum: o
       roteamento e as animações são código meu. Isso não é birra com ferramenta,
       é o caminho que me fez entender o que cada abstração está resolvendo.
     </p>
     <p>
-      Hoje procuro minha primeira oportunidade como desenvolvedor, de preferência
-      num time onde eu possa revisar código com gente mais experiente e crescer rápido.
+      Agora procuro minha primeira vaga num time de desenvolvimento, de preferência
+      onde eu possa revisar código com gente mais experiente e crescer rápido.
     </p>
   `;
 

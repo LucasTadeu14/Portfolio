@@ -75,11 +75,11 @@ export function Home({ onCleanup, onMount } = {}) {
   const description = document.createElement("p");
   description.classList.add("Home_desc");
   description.textContent =
-    "Graduando em Ciência da Computação, com foco em React, TypeScript e JavaScript moderno. Construo SPAs performáticas, componentes reutilizáveis e integrações com APIs REST.";
+    "Graduando em Ciência da Computação. Criei e mantenho o Cliniclis, sistema de gestão para clínicas feito em PHP e Angular, em produção com clínicas reais. Também entrego sites e SPAs em React e JavaScript puro.";
 
   const pillsRow = document.createElement("ul");
   pillsRow.classList.add("Home_pills");
-  ["React", "TypeScript", "Node.js", "JavaScript", "Git"].forEach((tech, i) => {
+  ["PHP", "Angular", "TypeScript", "MySQL", "React"].forEach((tech, i) => {
     const pill = document.createElement("li");
     pill.classList.add("Home_pill");
     pill.textContent = tech;
@@ -129,7 +129,7 @@ export function Home({ onCleanup, onMount } = {}) {
     // Deriva da lista real: adicionar um projeto atualiza o número sozinho.
     { value: `${ProjectData.length}`, label: ProjectData.length === 1 ? "Projeto" : "Projetos" },
     { value: "2+", label: "Anos estudando" },
-    { value: "React", label: "Stack principal" }
+    { value: "PHP · Angular", label: "Stack principal" }
   ].forEach(({ value, label }) => {
     const stat = document.createElement("div");
     stat.classList.add("Home_stat");
@@ -229,9 +229,10 @@ function buildTerminal(onCleanup) {
     `  ${prp("nome")}${op(":")}      ${str("Lucas Conde")},`,
     `  ${prp("role")}${op(":")}      ${str("FullStack Dev")},`,
     `  ${prp("stack")}${op(":")}     [`,
-    `    ${str("React")}, ${str("TypeScript")},`,
-    `    ${str("Node.js")}, ${str("JavaScript")},`,
+    `    ${str("PHP")}, ${str("Angular")},`,
+    `    ${str("TypeScript")}, ${str("MySQL")},`,
     `  ],`,
+    `  ${prp("produto")}${op(":")}   ${str("cliniclis.com")},`,
     `  ${prp("formacao")}${op(":")}  ${str("C. Computação")},`,
     `  ${prp("disponivel")}${op(":")} ${bl("true")},`,
     `};`,

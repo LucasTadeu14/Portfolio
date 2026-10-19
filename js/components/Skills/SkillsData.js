@@ -13,14 +13,14 @@ export const SkillGroups = [
   {
     id: "core",
     title: "Trabalho no dia a dia",
-    description: "Stack do projeto que mais ocupa meu tempo hoje, da interface ao banco.",
-    skills: ["angular", "ts", "php", "mysql", "js", "html", "css", "git"]
+    description: "Stack do Cliniclis, o projeto que mais ocupa meu tempo hoje, da API ao banco.",
+    skills: ["php", "mysql", "angular", "ts", "js", "html", "css", "git"]
   },
   {
     id: "working",
     title: "Uso com confiança",
     description: "Já entreguei funcionalidades com estas ferramentas.",
-    skills: ["react", "nodejs", "next", "firebase", "tailwind", "bootstrap", "docker"]
+    skills: ["react", "bootstrap", "docker", "githubactions", "firebase", "tailwind", "nodejs", "next"]
   },
   {
     id: "learning",

@@ -16,7 +16,7 @@ const routes = [
     path: "/",
     view: Home,
     title: "Lucas Conde | Desenvolvedor FullStack",
-    description: "Portfólio de Lucas Conde, desenvolvedor FullStack focado em React, TypeScript e Node.js."
+    description: "Desenvolvedor FullStack em PHP, Angular e TypeScript. Criador do Cliniclis, sistema de gestão para clínicas em produção."
   },
   {
     path: "/about",
@@ -28,7 +28,7 @@ const routes = [
     path: "/projects",
     view: Projects,
     title: `Projetos | ${SITE_NAME}`,
-    description: "Projetos de front-end e full-stack: React, TypeScript, Angular e JavaScript puro."
+    description: "Projetos full-stack e front-end: PHP, Angular, React e JavaScript puro."
   },
   {
     path: "/projects/:slug",
